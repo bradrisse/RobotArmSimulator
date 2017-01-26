@@ -18,3 +18,12 @@ youtube https://www.youtube.com/watch?v=FFErikKn8nw
 4. go to http://localhost:3000
 
 
+##ToDo
+
+- Socket.io w/ Mongo not working
+- Add Collision Detection
+- Remove Un-needed Menu Items
+- Make Naming White Label
+- Optional Socket or Local
+
+
