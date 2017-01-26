@@ -7,8 +7,8 @@ youtube https://www.youtube.com/watch?v=FFErikKn8nw
 
 ##Dependencies 
 
-NodeJS
-MongoDB
+- NodeJS
+- MongoDB
 
 ##Install
 

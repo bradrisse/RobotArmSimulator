@@ -147,7 +147,7 @@
 		if (robotJointArray[tabValue].control === 'z') {
 			robotJointArray[tabValue].rotation.z = robotJointArray[tabValue].rotation.z + Math.sin(offsetX*mag);
 		}
-		robotStat.update(robotJointArray);	    
+		//robotStat.update(robotJointArray);	    
 	}
 	
 	// mouse events
@@ -301,7 +301,7 @@
 
 		// this must run once the file is fully loaded
 		// add robot stat widget
-		robotStat.init(robotJointArray);	
+		//robotStat.init(robotJointArray);	
 	}
 	
 	function animate() {
