@@ -2,6 +2,7 @@
 	var socket = io.connect();
 
 	function RangeFunctionOnChange(RangeObject){	
+		SetJointValuePosition(RangeObject.jointNumber, RangeObject.jointAngleRad);
 		socket.emit('SetPositionJointMessage', RangeObject);
 	}
 	
