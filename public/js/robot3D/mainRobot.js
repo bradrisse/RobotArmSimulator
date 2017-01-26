@@ -98,12 +98,12 @@
 //			addText.innerHTML = 'Use Arrow Keys <- -> , toggle axis by hitting space bar';
 //			container.appendChild( addText );//	
 //			onMouseDownPosition = new THREE.Vector2();//	
-//			document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-//			document.addEventListener( 'mousewheel', onDocumentMouseWheel, false );
-//			document.addEventListener( 'mousedown', onDocumentMouseDown, false );
-//			document.addEventListener( 'mouseup', onDocumentMouseUp, false );//	
-//			document.addEventListener( 'keydown', onDocumentKeyDown, false );
-//			//document.addEventListener( 'keyup', onDocumentKeyUp, false );			
+			// document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+			// document.addEventListener( 'mousewheel', onDocumentMouseWheel, false );
+			// document.addEventListener( 'mousedown', onDocumentMouseDown, false );
+			// document.addEventListener( 'mouseup', onDocumentMouseUp, false );//	
+			document.addEventListener( 'keydown', onDocumentKeyDown, false );
+			document.addEventListener( 'keyup', onDocumentKeyUp, false );			
 	}
 	
 	//keyboard events
@@ -111,17 +111,17 @@
 
 		switch( event.keyCode ) {
 
-		case 32: toggleJoint(); break; // tab
+		case 18: toggleJoint(); break; // tab
 
 		case 37: offsetScene(-1,0); break;     //arrow <-
 		case 39: offsetScene( 1,0); break;     //arrow ->
-		//case 38: offsetScene( 0, -1); break; //arrow /\
-		//case 40: offsetScene( 0, 1 ); break; //arrow \/
+		// case 38: offsetScene( 0, -1); break; //arrow /\
+		// case 40: offsetScene( 0, 1 ); break; //arrow \/
 		}	
 	}
 	
 	function toggleJoint() {
-
+		console.log('toggle joint ', robotJointArray, tabValue);
 		if (tabValue === robotJointArray.length - 1) {
 			tabValue = 0;
 		}
