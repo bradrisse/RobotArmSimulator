@@ -18,6 +18,6 @@ fs.readFile(file, 'utf8', function (err, data) {
 });
 
 exports.index = function(req, res){
-	res.render('index', { title: 'GoluTech', menu: menuItemConfiguration });  
+	res.render('index', { title: 'Robot Arm Simulator', menu: menuItemConfiguration });  
 };
 
