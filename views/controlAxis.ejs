@@ -4,28 +4,28 @@
 	<div class="wrapper" id="wrapperJointPosition" name="Control Position">
 		<div class="row placeholders">
 			<div class="col-xs-10 col-xs-offset-1">
-				<input id="joint0" type="range" min="0" max="360" value="180" oninput="RangeFunctionOnChange({'jointNumber':0,'jointAngleRad': parseFloat(Math.PI*value/360)})">
+				<input id="joint0" type="range" min="0" max="360" value="180" oninput="RangeFunctionOnChange({'jointNumber':0,'jointAngleRad': parseFloat(Math.PI*value/360), 'raw': value})">
 				<h2>Joint 1</h2>
 				<span class="text-muted">rotational joint</span>
 			</div>
 		</div>
 		<div class="row placeholders">
 			<div class="col-xs-10 col-xs-offset-1">
-				<input id="joint1" type="range" min="0" max="360" value="180" oninput="RangeFunctionOnChange({'jointNumber':1,'jointAngleRad': parseFloat(Math.PI*value/360)})">
+				<input id="joint1" type="range" min="145" max="245" value="180" oninput="RangeFunctionOnChange({'jointNumber':1,'jointAngleRad': parseFloat(Math.PI*value/360), 'raw': value})">
 				<h2>Joint 2</h2>
 				<span class="text-muted">rotational joint</span>
 			</div>
 		</div>
 		<div class="row placeholders">
 			<div class="col-xs-10 col-xs-offset-1">
-				<input id="joint2" type="range" min="0" max="360" value="180" oninput="RangeFunctionOnChange({'jointNumber':2,'jointAngleRad': parseFloat(Math.PI*value/360)})">
+				<input id="joint2" type="range" min="95" max="325" value="180" oninput="RangeFunctionOnChange({'jointNumber':2,'jointAngleRad': parseFloat(Math.PI*value/360), 'raw': value})">
 				<h2>Joint 3</h2>
 				<span class="text-muted">rotational joint</span>
 			</div>
 		</div>
 		<div class="row placeholders">
 			<div class="col-xs-10 col-xs-offset-1">
-				<input id="joint3" type="range" min="0" max="360" value="180" oninput="RangeFunctionOnChange({'jointNumber':3,'jointAngleRad': parseFloat(Math.PI*value/360)})">
+				<input id="joint3" type="range" min="125" max="360" value="180" oninput="RangeFunctionOnChange({'jointNumber':3,'jointAngleRad': parseFloat(Math.PI*value/360), 'raw': value})">
 				<h2>Joint 4</h2>
 				<span class="text-muted">rotational joint</span>
 			</div>
